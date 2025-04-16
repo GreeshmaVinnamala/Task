@@ -25,36 +25,6 @@ const Order_pizza = () => {
     };
     getPizzas();
   }, []);
-
-  /*const getQuantity = (id) => {
-    const item = cart.find(p => p.pizza.id === id);
-    return item ? item.quantity : 0;
-  };*/
-  const handleAdd = (pizza) => {
-    const exists = cart.find(item => item.pizza.id === pizza.id);
-    if (exists) {
-      updateCart(pizza.id, exists.quantity + 1);
-    } else {
-      addToCart(pizza,[]);
-    }
-  };
-  
-
-  const handleIncrement = (pizza) => {
-    updateCart(pizza.id, getQuantity(pizza.id) + 1);
-  };
-
-  const handleDecrement = (pizza) => {
-    const quantity = getQuantity(pizza.id);
-    if (quantity === 1) {
-      removeFromCart(pizza.id);
-    } else {
-      updateCart(pizza.id, quantity - 1);
-    }
-  };
-  
-
-
   const goToToppings = (pizza) => {
     navigate("/Build_ur_pizza", { state: { pizza } });
   };
