@@ -1,0 +1,43 @@
+.navbar{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    font-family: outfit;
+    color: gray;
+    height:90px;
+}
+.navbar .logo{
+    width: 90px;
+    height: 90px;
+}
+.navbar .menu{
+    display: flex;
+    list-style: none;
+    gap:20px;
+    font-size: 18px;
+}
+.navbar .cart{
+    width:30px;
+    height:30px;
+    background-color:transparent;
+    gap: 0px;
+}
+.navbar .cartButton{
+    background-color: orange;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+.navbar .active{
+    padding-bottom:2px;
+    border-bottom: 2px solid white;
+
+}
+.navbar li{
+    cursor: pointer;
+}

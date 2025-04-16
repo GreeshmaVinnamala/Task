@@ -1,0 +1,29 @@
+.home_page{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: large;
+}
+
+.home_page .home1{
+    height: 300px;
+    width:500px;
+}
+.ingredients_p{
+    margin-top: 30px;
+}
+.ingredients{
+    text-align: center;
+}
+.minutes{
+    text-align: center;
+    margin-top: 100px;
+}
+.chef{
+    text-align:right;
+    margin-top: 20px;
+}
+.chefdata{
+    text-align: center;
+    margin-top: 30px;
+}
